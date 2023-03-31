@@ -16,7 +16,7 @@ const Header = () => {
       window.removeEventListener("scroll", scrollBg);
     };
   }, []);
-
+  // sadf
   return (
     <header
       className={`wrapper fixed top-0 left-0 py-5 z-50 transition-all duration-300 ${
