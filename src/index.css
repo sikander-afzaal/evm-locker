@@ -32,8 +32,12 @@
   background-color: #967c3e;
 }
 .rc-slider-handle {
-  min-height: 100%;
+  min-height: 26px;
+  height: 26px;
+  min-width: 26px;
   width: auto;
+  top: 0% !important;
+  margin-top: -1px;
   aspect-ratio: 1/1;
   opacity: 1;
   background-color: #967c3e;
