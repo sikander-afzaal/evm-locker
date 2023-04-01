@@ -192,7 +192,7 @@ const LiquidityLocker = () => {
               </button>
             </div>
           </div>
-          <p className="text-white font-bold text-lg">Flat Fee 0.03 ETH</p>
+          <p className="text-white font-bold text-lg">Flat Fee 0.05 ETH</p>
         </div>
       </div>
     </div>
