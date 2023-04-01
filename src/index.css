@@ -35,10 +35,9 @@
   min-height: 26px;
   height: 26px;
   min-width: 26px;
-  width: auto;
+  width: 26px;
   top: 0% !important;
   margin-top: -1px;
-  aspect-ratio: 1/1;
   opacity: 1;
   background-color: #967c3e;
   border: 3px solid white;
