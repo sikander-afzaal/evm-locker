@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   const [headerToggle, setHeaderToggle] = useState(false);
@@ -30,37 +31,52 @@ const Header = () => {
         ></div>
       )}
       <div className="flex w-[90%] max-w-[1386px] justify-between items-center">
-        <img
-          src="/logo.png"
-          className="w-[200px] xl:w-[259px] object-contain"
-          alt=""
-        />
+        <Link to="/">
+          <img
+            src="/logo.png"
+            className="w-[200px] xl:w-[259px] object-contain"
+            alt=""
+          />
+        </Link>
         <nav
           className={`xl:static fixed w-full max-w-none  sm:max-w-[450px] h-full xl:w-auto xl:max-w-none xl:h-auto top-0 ${
             headerToggle ? "right-0" : "-right-[700px]"
           } z-[90] flex justify-start items-center sm:items-start xl:flex-row flex-col pt-[6rem] px-[3rem] transition-all duration-700 pb-[3rem] xl:p-0 bg-black xl:bg-transparent xl:items-center gap-6`}
         >
-          <a
+          <NavLink
             onClick={() => setHeaderToggle(false)}
-            href="#"
-            className="border border-solid border-gold rounded-full min-w-[120px] px-4 py-2 text-white font-medium hover:bg-gold hover:text-black grid place-items-center transition-all duration-500"
+            to="/"
+            className={({ isActive }) =>
+              `${
+                isActive ? "bg-gold text-black" : "text-white"
+              } border border-solid border-gold rounded-full min-w-[120px] px-4 py-2  font-medium hover:bg-gold hover:text-black grid place-items-center transition-all duration-500`
+            }
           >
             Home
-          </a>
-          <a
+          </NavLink>
+          <NavLink
             onClick={() => setHeaderToggle(false)}
-            href="#"
-            className="border border-solid border-gold rounded-full min-w-[120px] px-4 py-2 text-white font-medium hover:bg-gold hover:text-black grid place-items-center transition-all duration-500"
+            to="/token-vesting"
+            className={({ isActive }) =>
+              `${
+                isActive ? "bg-gold text-black" : "text-white"
+              } border border-solid border-gold rounded-full min-w-[120px] px-4 py-2  font-medium hover:bg-gold hover:text-black grid place-items-center transition-all duration-500`
+            }
           >
             Token Vesting
-          </a>
-          <a
+          </NavLink>
+          <NavLink
             onClick={() => setHeaderToggle(false)}
-            href="#"
-            className="border border-solid border-gold rounded-full min-w-[120px] px-4 py-2 text-white font-medium hover:bg-gold hover:text-black grid place-items-center transition-all duration-500"
+            to="/liquidity-locker"
+            end
+            className={({ isActive }) =>
+              `${
+                isActive ? "bg-gold text-black" : "text-white"
+              } border border-solid border-gold rounded-full min-w-[120px] px-4 py-2  font-medium hover:bg-gold hover:text-black grid place-items-center transition-all duration-500`
+            }
           >
             Liquidity Locker
-          </a>
+          </NavLink>
           <a
             onClick={() => setHeaderToggle(false)}
             href="#"

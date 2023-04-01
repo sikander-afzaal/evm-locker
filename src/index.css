@@ -8,6 +8,41 @@
     @apply flex justify-start items-center flex-col w-full;
   }
   .contain {
-    @apply flex w-[90%] max-w-[1100px];
+    @apply flex w-[90%] max-w-[1150px];
   }
+}
+
+.rc-slider {
+  height: 30px;
+  border-radius: 100vh;
+  border: 3px solid white;
+}
+.rc-slider-rail {
+  height: 100%;
+  top: 0;
+  background-color: #785330;
+  border-radius: 100vh;
+}
+.rc-slider-track {
+  height: 100%;
+  border-radius: 100vh;
+  max-width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #967c3e;
+}
+.rc-slider-handle {
+  height: 100%;
+  width: auto;
+  aspect-ratio: 1/1;
+  opacity: 1;
+  background-color: #967c3e;
+  border: 3px solid white;
+}
+.rc-slider-handle:hover {
+  border-color: white;
+}
+.rc-slider-handle-dragging {
+  box-shadow: none !important;
+  border-color: white !important;
 }

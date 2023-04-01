@@ -13,6 +13,7 @@ module.exports = {
       },
       colors: {
         gold: "#967C3E",
+        cream: "#d4c399",
       },
     },
   },
