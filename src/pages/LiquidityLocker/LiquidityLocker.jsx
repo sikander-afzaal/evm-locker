@@ -7,7 +7,7 @@ const LiquidityLocker = () => {
   const [lockVal, setLockVal] = useState(10);
   return (
     <div className="wrapper">
-      <div className="contain lg:flex-row flex-col justify-between items-center lg:items-stretch pb-[60px] lg:gap-8 gap-12 pt-[120px] sm:pt-[150px] min-h-screen">
+      <div className="contain lg:flex-row flex-col justify-between items-center lg:items-stretch pb-[60px] lg:gap-8 gap-12 pt-[120px] sm:pt-[150px] ">
         <div className="flex w-full lg:w-auto justify-center lg:justify-between items-center lg:text-left text-center sm:items-start flex-col">
           <div className="flex lg:block flex-col justify-center items-center w-full">
             <h2 className="text-white text-[26px] sm:text-[40px] font-medium border-2 border-solid border-gold rounded-full  px-12 py-5 sm:py-6 leading-[1] w-full sm:w-max">
