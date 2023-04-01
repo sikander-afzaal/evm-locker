@@ -11,7 +11,7 @@ const TokenVesting = () => {
       <div className="contain lg:flex-row flex-col justify-between items-center lg:items-stretch pb-[60px] lg:gap-8 gap-12 pt-[120px] sm:pt-[150px] min-h-screen">
         <div className="flex w-full lg:w-auto justify-center lg:justify-between items-center lg:text-left text-center sm:items-start flex-col">
           <div className="flex lg:block flex-col justify-center items-center w-full">
-            <h2 className="text-white text-[26px] sm:text-[40px] font-medium border-2 border-solid border-gold rounded-full  px-12 py-5 sm:py-6 leading-[1] w-full sm:w-max">
+            <h2 className="text-white text-[26px] sm:text-[35px] font-medium border-2 border-solid border-gold rounded-full  px-12 py-5 sm:py-6 leading-[1] w-full sm:w-max">
               Token Locker
             </h2>
             <p className="text-white text-l max-w-[450px] mt-7">
@@ -27,13 +27,13 @@ const TokenVesting = () => {
         <div className="flex justify-start items-start flex-col gap-3 w-full max-w-full lg:max-w-[600px]">
           <div className="flex justify-start items-start flex-col gap-2 w-full">
             <div className="grid grid-cols-1 sm:grid-cols-3 w-full gap-3">
-              <p className="font-semibold bg-goldGr rounded-full grid place-items-center text-white text-lg w-full h-[56px]">
+              <p className="font-semibold bg-goldGr rounded-full grid place-items-center text-white text-lg w-full h-[46px]">
                 New Token Lock
               </p>
-              <p className="font-semibold bg-goldGr rounded-full grid place-items-center text-white text-lg w-full h-[56px]">
+              <p className="font-semibold bg-goldGr rounded-full grid place-items-center text-white text-lg w-full h-[46px]">
                 My Locks
               </p>
-              <p className="font-semibold bg-goldGr rounded-full grid place-items-center text-white text-lg w-full h-[56px]">
+              <p className="font-semibold bg-goldGr rounded-full grid place-items-center text-white text-lg w-full h-[46px]">
                 All Locks
               </p>
             </div>
@@ -191,7 +191,10 @@ const TokenVesting = () => {
               </button>
             </div>
             <div className="flex justify-start items-center gap-3 my-2">
-              <input type="checkbox" className="accent-cream" />
+              <input
+                type="checkbox"
+                className="accent-cream w-4 aspect-square"
+              />
               <p className="text-black font-medium text-xs">
                 Enable Vesting (Tokens will vest equally after unlock date till
                 vesting date.)

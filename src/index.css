@@ -32,7 +32,7 @@
   background-color: #967c3e;
 }
 .rc-slider-handle {
-  height: 100%;
+  min-height: 100%;
   width: auto;
   aspect-ratio: 1/1;
   opacity: 1;
@@ -45,4 +45,14 @@
 .rc-slider-handle-dragging {
   box-shadow: none !important;
   border-color: white !important;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
